@@ -1,0 +1,43 @@
+// This file lists all the initial parameters needed to execute all four
+operation modes in robustness_main.cc. The program reads from here before
+execution. 
+
+// This semicolon is required for correct parsing.
+;
+datdim = 20;
+
+data_covar_array = {
+{1,0,0,0,0,0,0,0,0,0},
+{0,1,0,0,0,0,0,0,0,0},
+{0,0,1,0,0,0,0,0,0,0},
+{0,0,0,1,0,0,0,0,0,0},
+{0,0,0,0,1,0,0,0,0,0},
+{0,0,0,0,0,1,0,0,0,0},
+{0,0,0,0,0,0,1,0,0,0},
+{0,0,0,0,0,0,0,1,0,0},
+{0,0,0,0,0,0,0,0,1,0},
+{0,0,0,0,0,0,0,0,0,1}
+};
+
+data_mean_array =
+{0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
+
+pardim = 2;
+
+prior_params_array =
+{0,0};
+
+prior_matrix = 
+{{0.01,0},
+{0,0.01} };
+
+g_matrix_array = 
+{{0,1,1,1,1,1,1,1,1,1},
+{1,0,1,1,1,1,1,1,1,1 } };
+
+lower_limit = 0;
+upper_limit = 10;
+num_steps_analyt_distribution = 1e4;
+num_sampled_data = 1e5
+
+// No semicolon here
