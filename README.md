@@ -42,6 +42,8 @@ the configuration parameters - the metadata - written into separate text files. 
 plot is produced that displays the probability distribution function (PDF), the cumulative 
 distribution function (CDF), and the  corresponding (0.05, 0.95) credible intervals mentioned above.
 
+![Example output](07-Sep-18_15-07-42_30.rnum.svg "PDF output")
+
 ## First steps 
 To get started with the program, first switch to the program root directory, then:
 `make`  
