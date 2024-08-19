@@ -19,7 +19,8 @@ def PlotDerivative(x_list, y_list):
 		if dx != 0.0:
 			dydx.append(dy/dx)
 		else:
-			print "Derivative could not be performed at point " + str(x_list[i])
+			print("Derivative could not be performed "
+		          "at point " + str(x_list[i]))
 			dydx.append(dydx[i-1])
 	dydx.append(dydx[len(x_list) - 2])
 			
@@ -126,7 +127,8 @@ elif '21.rana' in filename:
 	plot.vlines(R_hi, 0.0, y_hi, colors='red')
 
 else:
-	print "Data file name not supported. Supports only suffixes .rnum and .rana."
+	print("Data file name not supported. "
+	      "Supports only suffixes .rnum and .rana.")
 	quit()
 
 subplot.text(0.1, 0.3, 
